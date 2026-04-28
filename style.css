@@ -1,0 +1,151 @@
+/* ОБЩИЕ СТИЛИ */
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ШАПКА */
+.header {
+    background-color: #111;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* БУРГЕР */
+.t-menuburger {
+    width: 28px;
+    height: 20px;
+    position: relative;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.t-menuburger span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: .25s ease-in-out;
+}
+
+.t-menuburger span:nth-child(1) { top: 0; }
+.t-menuburger span:nth-child(2), .t-menuburger span:nth-child(3) { top: 8px; }
+.t-menuburger span:nth-child(4) { top: 16px; }
+
+.t-menuburger.open span:nth-child(1) { top: 8px; width: 0%; left: 50%; }
+.t-menuburger.open span:nth-child(2) { transform: rotate(45deg); }
+.t-menuburger.open span:nth-child(3) { transform: rotate(-45deg); }
+.t-menuburger.open span:nth-child(4) { top: 8px; width: 0%; left: 50%; }
+
+/* МОБИЛЬНОЕ МЕНЮ */
+.mobile-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #111;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    height: calc(100vh - 70px);
+}
+
+.menu-list {
+    list-style: none;
+    padding: 40px;
+    text-align: center;
+}
+
+.menu-list li { margin-bottom: 30px; }
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.menu-list a:hover { color: #f73613; }
+
+/* СЕКЦИИ */
+.page-section {
+    padding: 120px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+section:nth-child(even) { background-color: #0a0a0a; }
+
+.hero-bg {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://tildacdn.com');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+h1 { font-size: 48px; color: #fff; margin-bottom: 10px; }
+h2 { font-size: 36px; color: #f73613; text-transform: uppercase; margin-bottom: 20px; }
+
+/* COOKIE */
+.cookie-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ebebeb;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 280px;
+    z-index: 2000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.cookie-btn {
+    margin-top: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Анимация появления контента */
+.t-records { opacity: 0; transition: opacity 0.6s ease; }
+.t-records_visible { opacity: 1; }

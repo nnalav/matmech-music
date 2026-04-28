@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проект По пластинкам матмеха</title>
+    <meta name="description" content="Информация о музыкантах матмеха" />
+    
+    <!-- Подключаем внешнюю сетку Tilda (опционально) и твои стили -->
+    <link rel="stylesheet" href="https://tildacdn.com" type="text/css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="t-body">
+
+    <!-- Виджет COOKIE -->
+    <div id="cookie-notice" class="cookie-wrapper">
+        <div class="cookie-text">
+            <strong>Мы используем cookies.</strong><br />
+            Используя сайт, вы соглашаетесь с обработкой данных.
+        </div>
+        <button id="cookie-ok" class="cookie-btn">OK</button>
+    </div>
+
+    <!-- ШАПКА И МЕНЮ -->
+    <header class="header">
+        <div class="header__container">
+            <div class="logo">
+                <img src="https://tildacdn.com" alt="Logo">
+            </div>
+            <!-- Кнопка Бургер -->
+            <button type="button" class="t-menuburger">
+                <span></span><span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <!-- Выпадающее меню -->
+        <nav class="mobile-menu">
+            <ul class="menu-list">
+                <li><a href="#about">О ПРОЕКТЕ</a></li>
+                <li><a href="#gallery">ГАЛЕРЕЯ</a></li>
+                <li><a href="#music">МУЗЫКА</a></li>
+                <li><a href="#vizitka">ВИЗИТКА</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main id="allrecords" class="t-records">
+        
+        <!-- Секция 1: О проекте -->
+        <section id="about" class="page-section hero-bg">
+            <div class="container">
+                <h1 class="t-title">По пластинкам матмеха</h1>
+                <p class="t-descr">Музыка между строк кода: сохраняем голоса, лица и драйв концертов матмеха.</p>
+            </div>
+        </section>
+
+        <!-- Секция 2: Галерея -->
+        <section id="gallery" class="page-section">
+            <div class="container">
+                <h2>Галерея</h2>
+                <p>Здесь будут фотографии с концертов и мероприятий.</p>
+                <div class="placeholder-grid"></div>
+            </div>
+        </section>
+
+        <!-- Секция 3: Музыка -->
+        <section id="music" class="page-section">
+            <div class="container">
+                <h2>Музыка</h2>
+                <p>Аудиозаписи и плейлисты групп матмеха.</p>
+            </div>
+        </section>
+
+        <!-- Секция 4: Визитка -->
+        <section id="vizitka" class="page-section">
+            <div class="container">
+                <h2>Визитка</h2>
+                <p>Контакты проекта и информация об авторах.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- СКРИПТЫ -->
+    <script src="script.js"></script>
+    
+    <!-- Яндекс.Метрика (Noscript часть) -->
+    <noscript>
+        <div><img src="https://yandex.ru" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+</body>
+</html>
