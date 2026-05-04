@@ -121,8 +121,45 @@ section:nth-child(even) { background-color: #0a0a0a; }
     text-align: center;
 }
 
-h1 { font-size: 48px; color: #fff; margin-bottom: 10px; }
-h2 { font-size: 36px; color: #f73613; text-transform: uppercase; margin-bottom: 20px; }
+h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #f73613; /* Ваш красный цвет */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #ccc;
+    font-size: 18px;
+}
+
+/* СТИЛЬ КРАСНОЙ КНОПКИ-ССЫЛКИ */
+.btn-link {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #f73613; /* Красный фон */
+    color: #fff !important;    /* Всегда белый текст */
+    text-decoration: none;     /* Без подчеркивания */
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-link:hover {
+    background-color: #d12a0b; /* Темно-красный при наведении */
+    transform: scale(1.05);    /* Легкое увеличение */
+    box-shadow: 0 5px 15px rgba(247, 54, 19, 0.3); /* Красное свечение */
+}
+
 
 /* COOKIE */
 .cookie-wrapper {
