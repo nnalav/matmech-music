@@ -155,9 +155,8 @@ p {
 }
 
 .btn-link:hover {
-     color: #ff4d2e !important;
-    transform: scale(1.05); 
-    text-decoration: none !important;
+    background-color: #cc0000; 
+    color: #ffffff;            
 }
 
 h2 a.btn-link {
