@@ -145,7 +145,8 @@ p {
     padding: 15px 35px;
     background-color: #f73613; /* Тот же красный цвет */
     color: #ffffff !important; /* Текст внутри кнопки ОБЯЗАТЕЛЬНО белый */
-    text-decoration: none;      /* Убираем подчеркивание */
+    text-decoration: none !important; /* !important принудительно отключает линию */
+    outline: none;    
     border-radius: 4px;         /* Легкое скругление */
     font-size: 20px;
     font-weight: bold;
