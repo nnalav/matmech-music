@@ -144,28 +144,22 @@ p {
     display: inline-block;
     padding: 15px 35px;
     background-color: #f73613; 
-    color: #fff !important;   
-    
-    text-decoration: none !important; 
-    border: none;             
-    
+    color: #fff !important;    
+    text-decoration: none;    
     border-radius: 4px;
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     transition: all 0.3s ease;
+    border: none;
 }
 
 .btn-link:hover {
-    text-decoration: none !important;
-    background-color: #d12a0b;
-    transform: scale(1.05);
+    background-color: #d12a0b; 
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(247, 54, 19, 0.3); 
 }
 
-h2 a.btn-link {
-    color: #fff !important;
-    text-decoration: none !important;
-}
 
 /* COOKIE */
 .cookie-wrapper {
