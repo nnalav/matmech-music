@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #202020;
+    color: red;
+}
+
+.header {
+    height: 120px;
+    background-color: #333333;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.home-button {
+    background-color: #dddddd;
+    color: black;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+.home-button:hover {
+    background-color: white;
+}
+
+.hero {
+    min-height: 420px;
+
+    background-image: 
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 15%;
+}
+.hero-text {
+    max-width: 650px;
+}
+.hero-text h1 {
+    font-size: 52px;
+    margin: 0 0 25px;
+}
+.hero-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #cfcfcf;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.delay-1 {
+    animation-delay: 04.s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.groups-section {
+    background-color: #2b2b2b;
+    padding: 70px 10%;
+    text-align: center;
+}
+.groups-list {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.group-card {
+    width: 220px;
+}
+.group-card img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+    background-color: black;
+
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+.group-card img:hover {
+    transform: scale(1.05);
+}
+
+.group-card h3 {
+    background-color: #9b9b9b;
+    color: black;
+
+    padding: 10px;
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.footer {
+    background-color: #242424;
+    padding: 35px;
+    text-align: center;
+    border-top: 2px solid #777777;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.group-header {
+    height: 110px;
+    background-color: #333333;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+    border-radius: 10%;
+    object-fit: cover;  
+}
+
+.group-header-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.group-header-nav a{
+    background-color: #bfbfbf;
+    color: black;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+.group-header-nav a:hover {
+    background-color: white;
+}
+
+.group-hero {
+    min-height: 260px;
+
+    background-image: 
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url(images/group1-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 50px 10%;
+}
+
+.group-hero-text {
+    animation: fadeIn 1.4s ease;
+}
+
+.group-hero-text h1 {
+    font-size: 52px;
+    color: white;
+    margin: 0;
+}
+
+.about-group {
+    background-color: #2d2d2d;
+
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    padding: 60px 10%;
+}
+
+.about-text {
+    flex: 1;
+    background-color: #3b3b3b;
+    padding: 30px;
+
+    animation: fadeIn 1.4s ease;
+}
+
+.about-text h2 {
+    color: red;
+    font-size: 34px;
+    margin-top: 1.6;
+}
+
+.about-text p {
+    color: #dddddd;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.about-photo {
+    flex: 1;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+    display: block;
+}
+
+.music-section {
+    background-color: #050505;
+    padding: 55px 10%;
+    text-align: center;
+}
+
+.music-button {
+    display: inline-block;
+
+    background-color: #9b9b9b;
+    color: black;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+
+    padding: 18px 90px;
+    border-radius: 4px;
+}
+.music-button:hover {
+    background-color: white;
+}
+
+.group-footer {
+    background-color: #2b2b2b;
+    padding: 45px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 2px solid #555555;
+}
+
+.contacts {
+    grid-column: 1;
+}
+
+.contacts p {
+    color: #dddddd;
+    font-size: 18px;
+
+}
+
+
+.footer-info p {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
