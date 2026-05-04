@@ -15,6 +15,16 @@ body {
     padding: 0 20px;
 }
 
+.container a {
+    text-decoration: none; 
+    color: inherit;       
+    display: inline-block;
+}
+
+.container h2 a {
+    color: #f73613 !important;
+}
+
 /* ШАПКА */
 .header {
     background-color: #111;
