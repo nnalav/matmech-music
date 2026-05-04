@@ -128,9 +128,8 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
-    color: #f73613; /* Ваш красный цвет */
-    color: #ffffff !important;
+     font-size: 36px;
+    color: #f73613; /* Ваш основной красный */
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -144,21 +143,20 @@ p {
 .btn-link {
     display: inline-block;
     padding: 15px 35px;
-    background-color: #f73613; /* Красный фон */
-    color: #fff !important;    /* Всегда белый текст */
-    text-decoration: none;     /* Без подчеркивания */
-    border-radius: 4px;
+    background-color: #f73613; /* Тот же красный цвет */
+    color: #ffffff !important; /* Текст внутри кнопки ОБЯЗАТЕЛЬНО белый */
+    text-decoration: none;      /* Убираем подчеркивание */
+    border-radius: 4px;         /* Легкое скругление */
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     transition: all 0.3s ease;
-    border: none;
 }
 
 .btn-link:hover {
     background-color: #d12a0b; /* Темно-красный при наведении */
     transform: scale(1.05);    /* Легкое увеличение */
-    box-shadow: 0 5px 15px rgba(247, 54, 19, 0.3); /* Красное свечение */
+    box-shadow: 0 5px 15px rgba(247, 54, 19, 0.4); /* Красное свечение */
 }
 
 
