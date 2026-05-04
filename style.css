@@ -130,6 +130,7 @@ h1 {
 h2 {
     font-size: 36px;
     color: #f73613; /* Ваш красный цвет */
+    color: #ffffff !important;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
