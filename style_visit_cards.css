@@ -308,26 +308,60 @@ body {
 }
 
 /*вставляла Аня*/
-h1 {
-    font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
-    color: #fff;
-    margin-bottom: 10px;
-}
-
 @media (max-width: 768px) {
-   body {
-      font-size: 14px;
-   }
-   h1{
-      font-size: 24px;
-   }
-}
+    /* 1. Общие настройки */
+    body { font-size: 16px; } /* 14px слишком мелко для мобил */
+    
+    /* 2. Схлопываем отступы */
+    .hero, .groups-section, .about-group, .music-section, .group-hero {
+        padding: 40px 20px !important; 
+    }
 
-.text-container {
-  width: 200px;
-  /* Перенос длинных слов */
-  overflow-wrap: break-word; 
-  /* или word-break: break-all; для более грубого переноса */
+    /* 3. Шапка сайта */
+    .header, .group-header {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    /* 4. Блок "О группе" — делаем в столбик */
+    .about-group {
+        flex-direction: column;
+    }
+
+    .about-photo img {
+        height: auto; /* Убираем жесткие 350px */
+        width: 100%;
+    }
+
+    /* 5. Текст */
+    .hero-text h1, .group-hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    /* 6. Кнопки и навигация */
+    .group-header-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .group-header-nav a, .music-button {
+        width: 100%; /* Кнопки на весь экран на мобилке — так удобнее нажимать */
+        text-align: center;
+        padding: 15px 0;
+    }
+    
+    /* 7. Нижняя часть (footer) */
+    .group-footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
 }
 /* Анимация появления контента */
 .t-records { opacity: 0; transition: opacity 0.6s ease; }
