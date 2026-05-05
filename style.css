@@ -132,7 +132,7 @@ section:nth-child(even) { background-color: #0a0a0a; }
 }
 
 h1 {
-    font-size: 48px;
+    font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
     color: #fff;
     margin-bottom: 10px;
 }
@@ -149,7 +149,15 @@ p {
     font-size: 18px;
 }
 
-
+@media (max-width: 768px) {
+   body {
+      font-size: 14px;
+   }
+   h1{
+      font-size: 24px;
+   }
+}
+      
 /* COOKIE */
 .cookie-wrapper {
     position: fixed;
