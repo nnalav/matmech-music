@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>тату кота</title>
+    <link rel="stylesheet" href="style_visit_cards.css">
+    <style>
+        .tracklist-section {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .tracklist-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .tracklist {
+            list-style: none;
+            padding: 0;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .track-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 24px;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+
+        .track-item:last-child {
+            border-bottom: none;
+        }
+
+        .track-item:hover {
+            background: #f9f9f9;
+        }
+
+        .track-number {
+            font-weight: bold;
+            color: #666;
+            width: 50px;
+            font-size: 1.1rem;
+        }
+
+        .track-title {
+            flex: 1;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #222;
+        }
+
+        @media (max-width: 768px) {
+            .track-item {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .track-number {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="group-header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип" width="80">
+        </div>
+        <nav class="group-header-nav">
+            <a href="music.html">← Назад к музыке</a>
+            <a href="index.html">На главную</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="group-hero">
+            <div class="group-hero-text">
+                <h1>тату кота</h1>
+            </div>
+        </section>
+
+        <section class="tracklist-section">
+            <h2>Трек-лист</h2>
+            <div class="tracklist">
+                <div class="track-item">
+                    <span class="track-number">01.</span>
+                    <span class="track-title">трек 1</span>
+                </div>
+                <div class="track-item">
+                    <span class="track-number">02.</span>
+                    <span class="track-title">трек 2</span>
+                </div>
+                <div class="track-item">
+                    <span class="track-number">03.</span>
+                    <span class="track-title">трек 3</span>
+                </div>
+                <div class="track-item">
+                    <span class="track-number">04.</span>
+                    <span class="track-title">трек 4</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="group-footer">
+        <div class="contacts">
+            <h2>Контакты</h2>
+            <p>VK: <a href="#">ссылка на группу</a></p>
+            <p>TG: <a href="#">ссылка на группу</a></p>
+        </div>
+        <div class="footer-info">
+            <p>МатМех2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>
