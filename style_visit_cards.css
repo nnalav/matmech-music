@@ -322,6 +322,13 @@ h1 {
       font-size: 24px;
    }
 }
+
+.text-container {
+  width: 200px;
+  /* Перенос длинных слов */
+  overflow-wrap: break-word; 
+  /* или word-break: break-all; для более грубого переноса */
+}
 /* Анимация появления контента */
 .t-records { opacity: 0; transition: opacity 0.6s ease; }
 .t-records_visible { opacity: 1; }
