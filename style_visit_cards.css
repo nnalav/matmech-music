@@ -76,7 +76,7 @@ body {
 }
 
 .delay-1 {
-    animation-delay: 04.s;
+    animation-delay: 0.4s;
 }
 
 @keyframes fadeIn {
