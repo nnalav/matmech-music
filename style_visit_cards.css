@@ -307,6 +307,12 @@ body {
     text-align: center;
 }
 
+/*вставляла Аня*/
+h1 {
+    font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
+    color: #fff;
+    margin-bottom: 10px;
+}
 /* Анимация появления контента */
 .t-records { opacity: 0; transition: opacity 0.6s ease; }
 .t-records_visible { opacity: 1; }
