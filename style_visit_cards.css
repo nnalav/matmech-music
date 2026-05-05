@@ -313,6 +313,15 @@ h1 {
     color: #fff;
     margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+   body {
+      font-size: 14px;
+   }
+   h1{
+      font-size: 24px;
+   }
+}
 /* Анимация появления контента */
 .t-records { opacity: 0; transition: opacity 0.6s ease; }
 .t-records_visible { opacity: 1; }
