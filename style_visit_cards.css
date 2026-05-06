@@ -353,7 +353,7 @@ body {
         width: 100%;
     }
 
-    .group-header-nav a, .music-button {
+    .group-header-nav , .music-button {
         width: 100%; /* Кнопки на весь экран на мобилке — так удобнее нажимать */
         text-align: center;
         padding: 15px 0;
