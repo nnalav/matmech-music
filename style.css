@@ -33,8 +33,8 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    /*border-bottom: 1px solid #222;*/
-    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+   /* border-top: 1px solid #222;*/
 }
 
 .header__container {
