@@ -113,6 +113,19 @@ body {
 
 .menu-list a:hover { color: #f73613; }
 
+.footer {
+    background-color: #242424;
+    padding: 35px;
+    text-align: center;
+    border-top: 2px solid #777777;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 /* СЕКЦИИ */
 .page-section {
     padding: 120px 0;
@@ -149,18 +162,6 @@ p {
     font-size: 18px;
 }
 
-.footer {
-    background-color: #242424;
-    padding: 35px;
-    text-align: center;
-    border-top: 2px solid #777777;
-}
-
-.footer p {
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-}
 
 @media (max-width: 768px) {
    body {
