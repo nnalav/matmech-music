@@ -366,7 +366,9 @@ body {
         text-align: center;
     }
 }
-
+a {
+    text-decoration: none; /* Убирает подчеркивание */
+}
 /* Анимация появления контента */
 .t-records { opacity: 0; transition: opacity 0.6s ease; }
 .t-records_visible { opacity: 1; }
