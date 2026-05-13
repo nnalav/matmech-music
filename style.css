@@ -35,9 +35,6 @@ body {
     z-index: 1000;
     border-bottom: 1px solid #222;
    /* border-top: 1px solid #222;*/
-    background-image: url('IMG_4225.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .header__container {
@@ -166,6 +163,14 @@ p {
     font-size: 18px;
 }
 
+.banner {
+    background-image: url('IMG_4225.jpg');
+     background-repeat: no-repeat;
+    background-size: cover; /* Картинка закроет весь блок */
+    background-position: center; /* Центрирование */
+    width: 50%;
+    height: 400px;
+}
 
 @media (max-width: 768px) {
    body {
