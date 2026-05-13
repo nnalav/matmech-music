@@ -27,7 +27,7 @@ body {
 
 .banner {
     /* Накладываем темное затемнение (linear-gradient), чтобы белый и красный текст легко читались на фоне картинки */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('matmeh-plate.jpg'); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('IMG_4225.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;      /* Картинка закроет весь блок без искажений */
     background-position: center;  /* Центрируем изображение пластинки */
@@ -197,16 +197,18 @@ p {
     font-size: 18px;
 }
 
-.banner {
-    background-image: url('IMG_4225.jpg');
-     background-repeat: no-repeat;
-    background-size: cover; /* Картинка закроет весь блок */
-    background-position: center; /* Центрирование */
-    width: 50%;
-    height: 400px;
-}
+
 
 @media (max-width: 768px) {
+   .banner {
+        padding: 40px 20px; /* Уменьшаем отступы на мобильных */
+    }
+    .banner h2 {
+        font-size: 24px;    /* Уменьшаем заголовок h2 на смартфонах */
+    }
+    .banner p {
+        font-size: 15px;    /* Немного уменьшаем текст на смартфонах */
+    }
    body {
       font-size: 14px;
    }
