@@ -25,6 +25,40 @@ body {
     color: #f73613 !important;
 }
 
+.banner {
+    /* Накладываем темное затемнение (linear-gradient), чтобы белый и красный текст легко читались на фоне картинки */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('matmeh-plate.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;      /* Картинка закроет весь блок без искажений */
+    background-position: center;  /* Центрируем изображение пластинки */
+    width: 100%;                  /* Делаем блок на всю ширину контейнера */
+    box-sizing: border-box;
+    padding: 60px 40px;           /* Внутренние отступы, чтобы текст не прилипал к краям картинки */
+    margin-top: 20px;             /* Отступ от шапки сайта */
+}
+
+/* СТИЛИ ДЛЯ ТЕКСТА ВНУТРИ БАННЕРА */
+.banner h1 { 
+    font-size: clamp(1.8rem, 4vw + 1rem, 3.5rem); /* Адаптивный размер */
+    color: #fff; 
+    margin-top: 0;
+    margin-bottom: 10px; 
+}
+
+.banner h2 { 
+    font-size: 32px; 
+    color: #f73613; 
+    text-transform: uppercase; 
+    margin-bottom: 20px; 
+}
+
+.banner p { 
+    color: #ccc; 
+    font-size: 18px; 
+    margin-bottom: 0;
+    max-width: 800px; /* Ограничиваем ширину текста для удобства чтения */
+}
+
 /* ШАПКА */
 .header {
     background-color: #111;
