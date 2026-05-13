@@ -25,18 +25,6 @@ body {
     color: #f73613 !important;
 }
 
-.banner {
-    /* Накладываем темное затемнение (linear-gradient), чтобы белый и красный текст легко читались на фоне картинки */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('IMG_4225.jpg'); 
-    background-repeat: no-repeat;
-    background-size: cover;      /* Картинка закроет весь блок без искажений */
-    background-position: center;  /* Центрируем изображение пластинки */
-    width: 100%;                  /* Делаем блок на всю ширину контейнера */
-    box-sizing: border-box;
-    padding: 60px 40px;           /* Внутренние отступы, чтобы текст не прилипал к краям картинки */
-    margin-top: 20px;             /* Отступ от шапки сайта */
-}
-
 /* ШАПКА */
 .header {
     background-color: #111;
@@ -185,8 +173,8 @@ p {
         font-size: 24px;    /* Уменьшаем заголовок h2 на смартфонах 
     }
     .banner p {
-        font-size: 15px;    /* Немного уменьшаем текст на смартфонах */
-   // }
+        font-size: 15px;    /* Немного уменьшаем текст на смартфонах 
+   // }*/
    body {
       font-size: 14px;
    }
