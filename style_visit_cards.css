@@ -353,6 +353,13 @@ body {
         width: 100%;
     }
 
+    .group-header-nav a {
+    width: 100%;
+    padding: 12px 0 !important;  /* убираем боковые отступы */
+    text-align: center;
+    box-sizing: border-box;
+  }
+
     .group-header-nav , .music-button {
         width: 100%; /* Кнопки на весь экран на мобилке — так удобнее нажимать */
         text-align: center;
