@@ -133,7 +133,6 @@ body {
     min-height: 80vh;
     display: flex;
     align-items: center;
-   justify-content: center;
 }
 
 section:nth-child(even) { background-color: #0a0a0a; }
@@ -162,6 +161,18 @@ h2 {
 p {
     color: #ccc;
     font-size: 18px;
+}
+
+.page-section .container {
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section h2 {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 
