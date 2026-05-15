@@ -133,6 +133,7 @@ body {
     min-height: 80vh;
     display: flex;
     align-items: center;
+   justify-content: center;
 }
 
 section:nth-child(even) { background-color: #0a0a0a; }
