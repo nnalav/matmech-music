@@ -157,7 +157,7 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px; /* Красивый широкий отступ между буквами */
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: inline-block; /* Необходимо для корректной обрезки градиента под текст */
     
     /* Сам градиент (от белого к фирменному красному) */
