@@ -149,21 +149,21 @@ section:nth-child(even) { background-color: #0a0a0a; }
 }
 
 h1 {
-   /* font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
-    color: #fff;
-    margin-bottom: 10px;*/
-   font-family: 'Oswald', sans-serif; /* Мощный рок-шрифт */
-    font-size: clamp(1.5rem, 4vw + 1rem, 3rem); /* Сделали крупнее и адаптивнее */
+   font-family: 'Caveat', cursive; /* Переключили на письменный шрифт */
+    font-size: clamp(3rem, 8vw + 1rem, 6.5rem); /* Сделали крупнее, так как курсивные шрифты визуально меньше */
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 4px; /* Красивый широкий отступ между буквами */
-    margin-bottom: 10px;
-    display: inline-block; /* Необходимо для корректной обрезки градиента под текст */
+    letter-spacing: 1px; /* Для письменного текста большая разрядка не нужна, буквы должны быть ближе */
+    margin-bottom: 15px;
+    display: inline-block;
+    line-height: 1.2;
     
-    /* Сам градиент (от белого к фирменному красному) */
-    background: linear-gradient(135deg, #ffffff 30%, #f73613 100%);
+    /* Тот самый мягкий вертикальный градиент */
+    background: linear-gradient(to bottom, #ffffff 35%, #e6462b 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
+    /* Мягкая тень под буквами, чтобы текст не сливался с картинкой-фоном */
+    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.5));
 }
 
 h2 {
