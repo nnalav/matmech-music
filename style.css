@@ -150,12 +150,9 @@ section:nth-child(even) { background-color: #0a0a0a; }
 
 h1 {
    font-family: 'Caveat', cursive; /* Переключили на письменный шрифт */
-    font-size: clamp(3rem, 8vw + 1rem, 6.5rem); /* Сделали крупнее, так как курсивные шрифты визуально меньше */
-    font-weight: 700;
-    letter-spacing: 1px; /* Для письменного текста большая разрядка не нужна, буквы должны быть ближе */
-    margin-bottom: 15px;
-    display: inline-block;
-    line-height: 1.2;
+    font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
+    color: #fff;
+    margin-bottom: 10px;
     
     /* Тот самый мягкий вертикальный градиент */
     background: linear-gradient(to bottom, #ffffff 35%, #e6462b 100%);
