@@ -149,9 +149,21 @@ section:nth-child(even) { background-color: #0a0a0a; }
 }
 
 h1 {
-    font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
+   /* font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 10px;*/
+   font-family: 'Oswald', sans-serif; /* Мощный рок-шрифт */
+    font-size: clamp(2.5rem, 6vw + 1rem, 5.5rem); /* Сделали крупнее и адаптивнее */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Красивый широкий отступ между буквами */
+    margin-bottom: 20px;
+    display: inline-block; /* Необходимо для корректной обрезки градиента под текст */
+    
+    /* Сам градиент (от белого к фирменному красному) */
+    background: linear-gradient(135deg, #ffffff 30%, #f73613 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {
