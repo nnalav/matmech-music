@@ -158,8 +158,8 @@ body {
 }
 
 .logo img {
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: auto;
     border-radius: 10%;
     object-fit: cover;  
 }
