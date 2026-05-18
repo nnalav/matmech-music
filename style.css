@@ -80,6 +80,9 @@ body {
 .t-menuburger.open span:nth-child(4) { top: 8px; width: 0%; left: 50%; }
 
 /* МОБИЛЬНОЕ МЕНЮ */
+html {
+    scroll-behavior: smooth; /* Делает ЛЮБУЮ прокрутку по ссылкам плавной */
+}
 .mobile-menu {
     position: fixed;
     top: 70px;
