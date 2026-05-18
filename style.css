@@ -149,18 +149,24 @@ section:nth-child(even) { background-color: #0a0a0a; }
 }
 
 h1 {
-   font-family: 'Caveat', cursive; /* Переключили на письменный шрифт */
-    font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
-    color: #fff;
-    margin-bottom: 10px;
+   font-family: 'Russo One', sans-serif; /* Ретро-футуристичный плотный шрифт */
+    font-size: clamp(2.5rem, 6vw + 1rem, 5.5rem);
+    font-weight: 400; /* У этого шрифта один базовый вес, он изначально жирный */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    display: inline-block;
+    line-height: 1.1;
     
-    /* Тот самый мягкий вертикальный градиент */
-    background: linear-gradient(to bottom, #ffffff 35%, #e6462b 100%);
+    /* Мягкий ретро-градиент (от кремово-белого к теплому винтажному оранжево-красному) */
+    background: linear-gradient(to bottom, #fffdf0 30%, #e6462b 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    /* Мягкая тень под буквами, чтобы текст не сливался с картинкой-фоном */
-    filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.5));
+    /* Слоеная жесткая тень в стиле поп-арт/винтаж, которая создает 3D эффект */
+    filter: drop-shadow(3px 3px 0px #000) 
+            drop-shadow(5px 5px 0px rgba(247, 54, 19, 0.4));
+
 }
 
 h2 {
